@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Video Page</title>
+  <title>Video Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-color: black;
+    }
+
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <h1>Video Demo</h1>
-  <video width="640" height="360" controls>
-    <source src="video.mp4" type="video/mp4">
-    Browsermu tidak support video.
-  </video>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/sEJhrekcPbA?autoplay=1&controls=1&rel=0&showinfo=0"
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
