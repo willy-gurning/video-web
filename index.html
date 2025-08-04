@@ -4,30 +4,19 @@
   <meta charset="UTF-8">
   <title>Video Demo</title>
   <style>
-    * {
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
       height: 100%;
       width: 100%;
       background-color: black;
-    }
-
-    .video-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      overflow: hidden;
     }
 
     iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
       border: none;
@@ -35,11 +24,10 @@
   </style>
 </head>
 <body>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/sEJhrekcPbA?autoplay=1&controls=1&rel=0&showinfo=0"
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
-    </iframe>
-  </div>
+  <iframe 
+    src="https://www.youtube.com/embed/sEJhrekcPbA?autoplay=1&controls=1&rel=0&showinfo=0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
 </body>
 </html>
